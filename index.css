@@ -1,0 +1,44 @@
+body{
+    background-image: url(collage4.jpg);
+    background-size: cover;
+}
+.main{
+    background-color: #dca7b3;
+    height: 100px;
+    width: 37%; 
+    position: absolute;
+    top: 270px; 
+    left: 400px;
+    text-align: center;
+    border-radius: 10px;
+
+}
+.main:hover{
+    border: 3px solid #c57e8f;
+    transform: scale(1.0); 
+}
+a{
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+  }
+#p{
+    font-family: fantasy;
+    font-size: 90px;
+    position: relative;
+    bottom: 50px;
+
+}
+#p2{
+    font-size: medium;
+    position: absolute;
+    top: 150px;
+    left: 220px;
+    color: rgb(103, 33, 168);
+}
+#next{
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+}

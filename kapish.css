@@ -1,0 +1,175 @@
+/* navigation bar */
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+  nav{
+    position: sticky;
+    top: 0;
+ 
+  }
+  /* Navbar container */
+  .navbar {
+    background: linear-gradient(to right, #9c928c, #dfbdaa);
+    padding: 15px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+  }
+  #name{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  /* Navbar links container */
+  .nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .nav-links > li {
+    position: relative;
+    padding: 10px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Main links */
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    display: block;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Hover effect on main links */
+  .nav-links li:hover > a {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
+  }
+  
+  /* Dropdown menu style */
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    background: #d1ab83; /* Translucent background */
+    width: 220px;
+    list-style: none;
+    padding: 10px 0;
+    top: 100%;
+    left: 0;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(8px); /* Optional blur effect */
+    }
+  
+  /* Dropdown item styling */
+  .dropdown-menu li a {
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 8px;
+  }
+  
+  /* Hover effect on dropdown items */
+  .dropdown-menu li a:hover {
+    background-color: #8C3D2E;
+    transform: scale(1.05);
+  }
+  
+  /* Display dropdown when parent is hovered */
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  /* Add a subtle transition to the dropdown appearance */
+  .dropdown-menu {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  /* Show dropdown smoothly */
+  .dropdown:hover .dropdown-menu {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* main body */
+  
+  #heading{
+    text-align: center;
+    color: rgb(112, 23, 34);
+  }
+  #imageblock{
+    display: flex;
+    margin-left: 140px;
+  }
+  .image{
+    background-color: #8C3D2E;
+    height: 300px;
+    width: 300px;
+    margin-left: 25px;
+    border-radius: 10px;
+  }
+  #i1{
+    background-image: url(kapish.png);
+    background-size: cover;
+  }
+  #i2{
+    background-image: url(kapish1.png);
+    background-size: cover;
+  }
+  #i3{
+    background-image: url(kapish2.png);
+    background-size: cover;
+  }
+  #info{
+    text-align:start;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    text-decoration: none;
+    height: 500px;
+    width: 60%;
+    position: absolute;
+    left: 45px;
+  }
+  #img1{
+    height: 200px;
+    width: 300px;
+    border-radius: 15px;
+    background-image: url(kapish3.png);
+    background-size: cover;
+    position: absolute;
+    top: 700px;
+    left: 70%;
+  }
+  #img2{
+    height: 200px;
+    width: 300px;
+    border-radius: 15px;
+    background-image: url(kapish4.png);
+    background-size: cover;
+    position: absolute;
+    top: 920px;
+    left: 70%;
+  }
+  #img3{
+    height: 200px;
+    width: 300px;
+    border-radius: 15px;
+    background-image: url(kapish5.png);
+    background-size: cover;
+    position: absolute;
+    top: 920px;
+    left: 70%;
+  }
